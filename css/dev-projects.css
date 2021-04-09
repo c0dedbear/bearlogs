@@ -1,0 +1,78 @@
+#appsList li {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  margin-bottom: 60px;
+}
+
+#appsList li.reverse {
+  flex-direction: row-reverse;
+}
+
+.appDetails {
+  text-align: right;
+  position: sticky;
+  top: 40px;
+  max-width: 500px;
+  flex: 1 0 275px;
+  margin: 20px 0px 60px;
+}
+
+.reverse, .appDetails {
+  text-align: left;
+  margin: 20px 0px 60px;
+}
+
+.appDetails h2 {
+  font-family:
+	sofia-pro,
+	ui-sans-serif,
+	-apple-system,
+	BlinkMacSystemFont,
+	ans-serif;
+  font-size: 3.25em;
+  line-height: 1;
+  margin-bottom: 0.2em;
+}
+
+.appDescription {
+  line-height: 1.25;
+  margin-bottom: 15px;
+}
+
+.appDescription a {
+  text-decoration: underline;
+}
+
+.appImage {
+  max-width: calc(min(90vw, 320px));
+  margin: 0px 20px 0;
+}
+
+.spacer {
+	display: block;
+	flex: 1 0 0;
+	flex-grow: 1;
+	flex-shrink: 0;
+	flex-basis: 0px;
+}
+
+@media (max-width: 844px) {
+  .appDetails, .reverse {
+	text-align: center;
+	position: static;
+	max-width: calc(min(95vw, 650px));
+	margin-top: 0px;
+	margin-left: -20px;
+	margin-bottom: 10px;
+  }
+
+  .appImage {
+	max-width: calc(min(90vw, 320px));
+	margin: -20px 0px 0px;
+  }
+}
+
