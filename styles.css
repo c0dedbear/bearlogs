@@ -12924,48 +12924,82 @@ li {
 }
 
 /* line 38, Resources/css/styles.scss */
-blockquote {
-  margin-bottom: 1rem;
-  font-size: 1.15rem;
-  color: #6c757d;
+blockquote.quote {
+  position: relative;
+  text-align: center;
+  padding: 1rem 1.2rem;
+  margin: 1rem auto 2rem;
 }
 
-/* line 43, Resources/css/styles.scss */
+/* line 44, Resources/css/styles.scss */
+blockquote.quote {
+  background: linear-gradient(to right, #039be5 4px, transparent 4px) 0 100%, linear-gradient(to left, #039be5 4px, transparent 4px) 100% 0, linear-gradient(to bottom, #039be5 4px, transparent 4px) 100% 0, linear-gradient(to top, #039be5 4px, transparent 4px) 0 100%;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+
+/* line 53, Resources/css/styles.scss */
+blockquote.quote:before,
+blockquote.quote:after {
+  font-family: FontAwesome;
+  position: absolute;
+  color: #039be5;
+  font-size: 34px;
+}
+
+/* line 60, Resources/css/styles.scss */
+blockquote.quote:before {
+  content: "\f10d";
+  top: -12px;
+  margin-right: -20px;
+  right: 100%;
+}
+
+/* line 66, Resources/css/styles.scss */
+blockquote.quote:after {
+  content: "\f10e";
+  margin-left: -20px;
+  left: 100%;
+  top: auto;
+  bottom: -20px;
+}
+
+/* line 73, Resources/css/styles.scss */
 .jumbotron a {
   color: var(--secondary);
 }
 
-/* line 46, Resources/css/styles.scss */
+/* line 76, Resources/css/styles.scss */
 .jumbotron a:hover {
   color: var(--light);
 }
 
-/* line 49, Resources/css/styles.scss */
+/* line 79, Resources/css/styles.scss */
 .articleBordered {
   border-bottom: 1px solid #eaeff1;
 }
 
-/* line 52, Resources/css/styles.scss */
+/* line 82, Resources/css/styles.scss */
 .bg-dark {
   background-color: #343a40;
 }
 
-/* line 55, Resources/css/styles.scss */
+/* line 85, Resources/css/styles.scss */
 .display-4 {
   font-size: 2.5rem;
 }
 
-/* line 58, Resources/css/styles.scss */
+/* line 88, Resources/css/styles.scss */
 .width75OnLarge {
   width: auto !important;
 }
 
-/* line 61, Resources/css/styles.scss */
+/* line 91, Resources/css/styles.scss */
 .opacity80 {
   filter: opacity(80%);
 }
 
-/* line 64, Resources/css/styles.scss */
+/* line 94, Resources/css/styles.scss */
 .logoOnPageDescriptionBlock {
   float: right;
   width: auto;
@@ -12974,7 +13008,7 @@ blockquote {
   filter: opacity(90%);
 }
 
-/* line 71, Resources/css/styles.scss */
+/* line 101, Resources/css/styles.scss */
 .logoOnNotFoundSearchPage {
   width: 60px;
   height: 60px;
@@ -12982,7 +13016,7 @@ blockquote {
   filter: opacity(90%);
 }
 
-/* line 77, Resources/css/styles.scss */
+/* line 107, Resources/css/styles.scss */
 .dialogEmojiNotFound {
   display: block;
   padding-left: 0.2em;
@@ -12990,7 +13024,7 @@ blockquote {
   filter: opacity(95%);
 }
 
-/* line 83, Resources/css/styles.scss */
+/* line 113, Resources/css/styles.scss */
 .dialogEmoji {
   display: block;
   float: right;
@@ -12999,7 +13033,7 @@ blockquote {
   filter: opacity(95%);
 }
 
-/* line 90, Resources/css/styles.scss */
+/* line 120, Resources/css/styles.scss */
 .logoForFeaturedPosts {
   float: left;
   width: auto;
@@ -13008,7 +13042,7 @@ blockquote {
   filter: opacity(90%);
 }
 
-/* line 97, Resources/css/styles.scss */
+/* line 127, Resources/css/styles.scss */
 .dialogEmojiLeft {
   display: block;
   float: left;
@@ -13018,7 +13052,7 @@ blockquote {
   filter: opacity(95%);
 }
 
-/* line 105, Resources/css/styles.scss */
+/* line 135, Resources/css/styles.scss */
 .textOnPageDescriptionBlock {
   font-size: 0.75rem !important;
   font-family: 'Press Start 2P', cursive !important;
@@ -13027,69 +13061,69 @@ blockquote {
 
 /* MARK: - Screen Sizes Settings */
 @media (min-width: 768px) {
-  /* line 113, Resources/css/styles.scss */
+  /* line 143, Resources/css/styles.scss */
   .h-md-250 {
     height: 250px;
   }
-  /* line 114, Resources/css/styles.scss */
+  /* line 144, Resources/css/styles.scss */
   .display-4 {
     font-size: 3rem;
   }
-  /* line 115, Resources/css/styles.scss */
+  /* line 145, Resources/css/styles.scss */
   .postsFeed {
     padding: 40px 0 5vw;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
   }
-  /* line 121, Resources/css/styles.scss */
+  /* line 151, Resources/css/styles.scss */
   .width75OnLarge {
     width: 75% !important;
   }
 }
 
 @media (max-width: 575.98px) {
-  /* line 127, Resources/css/styles.scss */
+  /* line 157, Resources/css/styles.scss */
   .featuredPostCardImage {
     max-width: 100px;
   }
 }
 
 @media (max-width: 991.98px) {
-  /* line 133, Resources/css/styles.scss */
+  /* line 163, Resources/css/styles.scss */
   .bearlogsFooterBackToTopButton {
     display: block;
     margin-left: auto !important;
     margin-right: auto !important;
   }
-  /* line 138, Resources/css/styles.scss */
+  /* line 168, Resources/css/styles.scss */
   .bearlogsFooter div.col-12:first-child {
     margin-bottom: 1em !important;
   }
-  /* line 141, Resources/css/styles.scss */
+  /* line 171, Resources/css/styles.scss */
   .footerSections {
     margin-left: 1em !important;
   }
-  /* line 144, Resources/css/styles.scss */
+  /* line 174, Resources/css/styles.scss */
   .logoOnPageDescriptionBlock {
     height: 30px;
     padding-top: 6px;
   }
-  /* line 148, Resources/css/styles.scss */
+  /* line 178, Resources/css/styles.scss */
   .textOnPageDescriptionBlock {
     font-size: 0.8rem !important;
   }
-  /* line 151, Resources/css/styles.scss */
+  /* line 181, Resources/css/styles.scss */
   .dialogEmoji {
     font-size: 1rem !important;
   }
-  /* line 154, Resources/css/styles.scss */
+  /* line 184, Resources/css/styles.scss */
   .featuredPostCardDescription {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
-  /* line 160, Resources/css/styles.scss */
+  /* line 190, Resources/css/styles.scss */
   .featuredPostCardTitle {
     white-space: normal;
     /* Текст переносится */
@@ -13098,38 +13132,38 @@ blockquote {
     text-overflow: ellipsis;
     /* Добавляем многоточие */
   }
-  /* line 165, Resources/css/styles.scss */
+  /* line 195, Resources/css/styles.scss */
   .width75OnLarge {
     width: 100% !important;
   }
-  /* line 168, Resources/css/styles.scss */
+  /* line 198, Resources/css/styles.scss */
   .featuredPostCardImage {
     max-width: 100px;
   }
 }
 
 /* MARK: - Blog Header */
-/* line 173, Resources/css/styles.scss */
+/* line 203, Resources/css/styles.scss */
 .bearlogsHeader {
   line-height: 1;
   border-bottom: 1px solid #e5e5e5;
 }
 
-/* line 177, Resources/css/styles.scss */
+/* line 207, Resources/css/styles.scss */
 .bearlogsHeaderTitle {
   font-family: "Playfair Display", Georgia, "Times New Roman", serif;
   font-size: 2.25rem;
   color: #343a40;
 }
 
-/* line 182, Resources/css/styles.scss */
+/* line 212, Resources/css/styles.scss */
 .bearlogsHeaderTitle:hover {
   text-decoration: none;
   color: #6c757d;
 }
 
 /* MARK: - Nav Scroller */
-/* line 187, Resources/css/styles.scss */
+/* line 217, Resources/css/styles.scss */
 .navScroller {
   position: relative;
   z-index: 2;
@@ -13137,7 +13171,7 @@ blockquote {
   overflow-y: hidden;
 }
 
-/* line 193, Resources/css/styles.scss */
+/* line 223, Resources/css/styles.scss */
 .navScroller .nav {
   display: -ms-flexbox;
   display: flex;
@@ -13151,7 +13185,7 @@ blockquote {
   -webkit-overflow-scrolling: touch;
 }
 
-/* line 205, Resources/css/styles.scss */
+/* line 235, Resources/css/styles.scss */
 .navScroller .nav-link {
   padding-top: .75rem;
   padding-bottom: .75rem;
@@ -13159,12 +13193,12 @@ blockquote {
 }
 
 /* MARK: - Blog posts */
-/* line 212, Resources/css/styles.scss */
+/* line 242, Resources/css/styles.scss */
 .posts {
   overflow-x: hidden;
 }
 
-/* line 215, Resources/css/styles.scss */
+/* line 245, Resources/css/styles.scss */
 .postsFeed {
   position: relative;
   display: flex;
@@ -13173,7 +13207,7 @@ blockquote {
   padding: 0 0 0;
 }
 
-/* line 222, Resources/css/styles.scss */
+/* line 252, Resources/css/styles.scss */
 .postCard {
   flex: 1 1 301px;
   flex-direction: column;
@@ -13185,7 +13219,7 @@ blockquote {
   display: flex;
 }
 
-/* line 232, Resources/css/styles.scss */
+/* line 262, Resources/css/styles.scss */
 .postCardTitle {
   color: #525b65;
   margin: 0 0 .4em;
@@ -13193,7 +13227,7 @@ blockquote {
   font-family: Roboto;
 }
 
-/* line 238, Resources/css/styles.scss */
+/* line 268, Resources/css/styles.scss */
 .postCardImage {
   height: 200px;
   width: 100%;
@@ -13202,26 +13236,26 @@ blockquote {
   margin-bottom: 0.5em;
 }
 
-/* line 245, Resources/css/styles.scss */
+/* line 275, Resources/css/styles.scss */
 .postCardHeader {
   margin-top: 0;
   margin: 15px 0 0;
 }
 
-/* line 249, Resources/css/styles.scss */
+/* line 279, Resources/css/styles.scss */
 .postCardContentLink {
   position: relative;
   display: block;
 }
 
-/* line 253, Resources/css/styles.scss */
+/* line 283, Resources/css/styles.scss */
 .postCardMeta {
   display: flex;
   align-items: flex-start;
   padding: 0;
 }
 
-/* line 258, Resources/css/styles.scss */
+/* line 288, Resources/css/styles.scss */
 .postCardBylineContent {
   flex: 1 1 50%;
   display: flex;
@@ -13234,13 +13268,13 @@ blockquote {
   letter-spacing: .2px;
 }
 
-/* line 269, Resources/css/styles.scss */
+/* line 299, Resources/css/styles.scss */
 .postCardBylineContent a {
   color: #434952;
   font-weight: 600;
 }
 
-/* line 273, Resources/css/styles.scss */
+/* line 303, Resources/css/styles.scss */
 .postCardSectionTitle {
   color: #97a0a9;
   font-size: .8rem;
@@ -13250,17 +13284,17 @@ blockquote {
   margin-bottom: -0.8em;
 }
 
-/* line 281, Resources/css/styles.scss */
+/* line 311, Resources/css/styles.scss */
 .postCardDescription {
   color: #6e6e6e;
 }
 
-/* line 284, Resources/css/styles.scss */
+/* line 314, Resources/css/styles.scss */
 .postCardBylineContent span {
   margin: 0;
 }
 
-/* line 287, Resources/css/styles.scss */
+/* line 317, Resources/css/styles.scss */
 .postCardBylineContentDate {
   font-size: .8rem;
   display: inline-block;
@@ -13268,7 +13302,7 @@ blockquote {
   opacity: .63;
 }
 
-/* line 293, Resources/css/styles.scss */
+/* line 323, Resources/css/styles.scss */
 .featuredPostCardImage {
   width: 200px;
   height: 100%;
@@ -13277,7 +13311,7 @@ blockquote {
   filter: grayscale(50%);
 }
 
-/* line 300, Resources/css/styles.scss */
+/* line 330, Resources/css/styles.scss */
 .featuredPostCardDescription {
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -13285,7 +13319,7 @@ blockquote {
   overflow: hidden;
 }
 
-/* line 306, Resources/css/styles.scss */
+/* line 336, Resources/css/styles.scss */
 .featuredPostCardTitle {
   font-size: 1.4rem;
   white-space: nowrap;
@@ -13297,28 +13331,28 @@ blockquote {
 }
 
 /* MARK: - Blog Footer */
-/* line 314, Resources/css/styles.scss */
+/* line 344, Resources/css/styles.scss */
 .bearlogsFooter {
   padding-top: 0.1rem;
 }
 
-/* line 317, Resources/css/styles.scss */
+/* line 347, Resources/css/styles.scss */
 .footerSectionTitle {
   font-weight: 200;
 }
 
-/* line 320, Resources/css/styles.scss */
+/* line 350, Resources/css/styles.scss */
 .footerSections {
   margin-left: 6em;
   margin-right: auto;
 }
 
-/* line 324, Resources/css/styles.scss */
+/* line 354, Resources/css/styles.scss */
 .bearlogsFooter div.col-12:first-child {
   text-align: center;
 }
 
-/* line 327, Resources/css/styles.scss */
+/* line 357, Resources/css/styles.scss */
 .bearlogsFooterLink {
   filter: opacity(80%);
   color: #6c757d !important;
@@ -13327,49 +13361,49 @@ blockquote {
   font-weight: 200;
 }
 
-/* line 334, Resources/css/styles.scss */
+/* line 364, Resources/css/styles.scss */
 .linkDisabled {
   filter: opacity(50%);
 }
 
-/* line 337, Resources/css/styles.scss */
+/* line 367, Resources/css/styles.scss */
 .bearlogsFooterLink:hover {
   text-decoration: none;
   color: #343a40 !important;
 }
 
-/* line 341, Resources/css/styles.scss */
+/* line 371, Resources/css/styles.scss */
 .bearlogsFooterImg {
   height: 20px;
   margin-bottom: .25em;
   margin-right: .5em;
 }
 
-/* line 346, Resources/css/styles.scss */
+/* line 376, Resources/css/styles.scss */
 .bearlogsFooterRssLink:hover {
   color: #6c757d !important;
 }
 
-/* line 349, Resources/css/styles.scss */
+/* line 379, Resources/css/styles.scss */
 .bearlogsFooterRssIcon {
   filter: opacity(30%);
   margin-bottom: 0.2em;
   margin-right: 0.25em;
 }
 
-/* line 354, Resources/css/styles.scss */
+/* line 384, Resources/css/styles.scss */
 .bearlogsFooterBackToTopButton {
   display: block;
   margin-left: auto;
   margin-right: 0;
 }
 
-/* line 359, Resources/css/styles.scss */
+/* line 389, Resources/css/styles.scss */
 .bearlogsFooterSectionTitle {
   color: #fff !important;
 }
 
-/* line 362, Resources/css/styles.scss */
+/* line 392, Resources/css/styles.scss */
 abbr[title] {
   text-decoration: none !important;
   -webkit-text-decoration: none !important;
@@ -13381,7 +13415,7 @@ abbr[title] {
 }
 
 /* MARK: - Tags */
-/* line 373, Resources/css/styles.scss */
+/* line 403, Resources/css/styles.scss */
 .tag {
   display: inline-block;
   padding: 4px 6px;
@@ -13393,24 +13427,25 @@ abbr[title] {
   border: none !important;
 }
 
-/* line 383, Resources/css/styles.scss */
+/* line 413, Resources/css/styles.scss */
 .tag a {
   text-decoration: none;
 }
 
-/* line 386, Resources/css/styles.scss */
+/* line 416, Resources/css/styles.scss */
 .tagIcon {
   padding-top: 0px;
   margin-bottom: 1px;
+  margin-right: 3px;
 }
 
-/* line 390, Resources/css/styles.scss */
+/* line 421, Resources/css/styles.scss */
 a .tag:hover {
   color: var(--white) !important;
   background-color: #43484c !important;
 }
 
-/* line 394, Resources/css/styles.scss */
+/* line 425, Resources/css/styles.scss */
 .all-tags li {
   font-size: 1.4em;
   margin-right: 10px;
@@ -13418,24 +13453,24 @@ a .tag:hover {
 }
 
 /* MARK: - Fonts */
-/* line 400, Resources/css/styles.scss */
+/* line 431, Resources/css/styles.scss */
 .selectedSectionText {
   color: #333 !important;
 }
 
-/* line 403, Resources/css/styles.scss */
+/* line 434, Resources/css/styles.scss */
 .notSelectedSectionText {
   color: #d2d5d9 !important;
 }
 
 /* MARK: - SVG and Images */
-/* line 407, Resources/css/styles.scss */
+/* line 438, Resources/css/styles.scss */
 .svgIconInverted {
   fill: #6c757d !important;
   filter: opacity(50%);
 }
 
-/* line 411, Resources/css/styles.scss */
+/* line 442, Resources/css/styles.scss */
 .svgIconInverted:hover {
   fill: #333 !important;
   filter: opacity(100%);
@@ -13443,73 +13478,73 @@ a .tag:hover {
 
 /* MARK: - Dark Theme Settings */
 @media (prefers-color-scheme: dark) {
-  /* line 417, Resources/css/styles.scss */
+  /* line 448, Resources/css/styles.scss */
   body, header {
     color: #aeb2b7;
     background-color: #222;
   }
-  /* line 421, Resources/css/styles.scss */
+  /* line 452, Resources/css/styles.scss */
   .postCardDescription {
     color: #aeb2b7eb;
   }
-  /* line 424, Resources/css/styles.scss */
+  /* line 455, Resources/css/styles.scss */
   .bg-dark, .bg-light, .auto-bg-color {
     background-color: #333 !important;
   }
-  /* line 427, Resources/css/styles.scss */
+  /* line 458, Resources/css/styles.scss */
   .border {
     border: none;
   }
-  /* line 430, Resources/css/styles.scss */
+  /* line 461, Resources/css/styles.scss */
   .bearlogsHeader, .border-bottom, .articleBordered {
     border-bottom: 1px solid #333 !important;
   }
-  /* line 433, Resources/css/styles.scss */
+  /* line 464, Resources/css/styles.scss */
   .postCardTitle, h1, h2, h3, h4, h5, h6 {
     color: #aeb2b7;
   }
-  /* line 436, Resources/css/styles.scss */
+  /* line 467, Resources/css/styles.scss */
   .postCardSectionTitle {
     color: #565a5f;
   }
-  /* line 439, Resources/css/styles.scss */
+  /* line 470, Resources/css/styles.scss */
   a:hover, .bearlogsFooterLink:hover, .selectedSectionText {
     color: #f8f9fa !important;
   }
-  /* line 442, Resources/css/styles.scss */
+  /* line 473, Resources/css/styles.scss */
   a.bearlogsHeaderTitle, .bearlogsPostTitle a {
     color: #ddd;
   }
-  /* line 445, Resources/css/styles.scss */
+  /* line 476, Resources/css/styles.scss */
   a.bearlogsHeaderTitle:hover {
     color: #fff;
   }
-  /* line 448, Resources/css/styles.scss */
+  /* line 479, Resources/css/styles.scss */
   .notSelectedSectionText {
     color: #45474d !important;
   }
-  /* line 451, Resources/css/styles.scss */
+  /* line 482, Resources/css/styles.scss */
   .bearlogsFooter {
     background-color: #222;
   }
-  /* line 454, Resources/css/styles.scss */
+  /* line 485, Resources/css/styles.scss */
   .bearlogsFooterRssIcon {
     filter: invert(0.34);
   }
-  /* line 457, Resources/css/styles.scss */
+  /* line 488, Resources/css/styles.scss */
   .bearlogsFooterRssLink:hover, .gs-spelling, .gs-result i {
     color: #6c757d !important;
   }
-  /* line 460, Resources/css/styles.scss */
+  /* line 491, Resources/css/styles.scss */
   .svgIconInverted {
     filter: opacity(50%);
   }
-  /* line 463, Resources/css/styles.scss */
+  /* line 494, Resources/css/styles.scss */
   .svgIconInverted:hover {
     fill: #ddd !important;
     filter: opacity(100%);
   }
-  /* line 467, Resources/css/styles.scss */
+  /* line 498, Resources/css/styles.scss */
   .logoForFeaturedPosts, .dialogEmojiLeft, .logoOnPageDescriptionBlock, .dialogEmoji {
     filter: opacity(85%);
   }
