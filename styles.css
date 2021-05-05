@@ -13331,28 +13331,28 @@ blockquote.quote:after {
 }
 
 /* MARK: - Blog Footer */
-/* line 344, Resources/css/styles.scss */
+/* line 345, Resources/css/styles.scss */
 .bearlogsFooter {
   padding-top: 0.1rem;
 }
 
-/* line 347, Resources/css/styles.scss */
+/* line 348, Resources/css/styles.scss */
 .footerSectionTitle {
   font-weight: 200;
 }
 
-/* line 350, Resources/css/styles.scss */
+/* line 351, Resources/css/styles.scss */
 .footerSections {
   margin-left: 6em;
   margin-right: auto;
 }
 
-/* line 354, Resources/css/styles.scss */
+/* line 355, Resources/css/styles.scss */
 .bearlogsFooter div.col-12:first-child {
   text-align: center;
 }
 
-/* line 357, Resources/css/styles.scss */
+/* line 358, Resources/css/styles.scss */
 .bearlogsFooterLink {
   filter: opacity(80%);
   color: #6c757d !important;
@@ -13361,49 +13361,49 @@ blockquote.quote:after {
   font-weight: 200;
 }
 
-/* line 364, Resources/css/styles.scss */
+/* line 365, Resources/css/styles.scss */
 .linkDisabled {
   filter: opacity(50%);
 }
 
-/* line 367, Resources/css/styles.scss */
+/* line 368, Resources/css/styles.scss */
 .bearlogsFooterLink:hover {
   text-decoration: none;
   color: #343a40 !important;
 }
 
-/* line 371, Resources/css/styles.scss */
+/* line 372, Resources/css/styles.scss */
 .bearlogsFooterImg {
   height: 20px;
   margin-bottom: .25em;
   margin-right: .5em;
 }
 
-/* line 376, Resources/css/styles.scss */
+/* line 377, Resources/css/styles.scss */
 .bearlogsFooterRssLink:hover {
   color: #6c757d !important;
 }
 
-/* line 379, Resources/css/styles.scss */
+/* line 380, Resources/css/styles.scss */
 .bearlogsFooterRssIcon {
   filter: opacity(30%);
   margin-bottom: 0.2em;
   margin-right: 0.25em;
 }
 
-/* line 384, Resources/css/styles.scss */
+/* line 385, Resources/css/styles.scss */
 .bearlogsFooterBackToTopButton {
   display: block;
   margin-left: auto;
   margin-right: 0;
 }
 
-/* line 389, Resources/css/styles.scss */
+/* line 390, Resources/css/styles.scss */
 .bearlogsFooterSectionTitle {
   color: #fff !important;
 }
 
-/* line 392, Resources/css/styles.scss */
+/* line 393, Resources/css/styles.scss */
 abbr[title] {
   text-decoration: none !important;
   -webkit-text-decoration: none !important;
@@ -13415,7 +13415,7 @@ abbr[title] {
 }
 
 /* MARK: - Tags */
-/* line 403, Resources/css/styles.scss */
+/* line 404, Resources/css/styles.scss */
 .tag {
   display: inline-block;
   padding: 4px 6px;
@@ -13427,25 +13427,25 @@ abbr[title] {
   border: none !important;
 }
 
-/* line 413, Resources/css/styles.scss */
+/* line 414, Resources/css/styles.scss */
 .tag a {
   text-decoration: none;
 }
 
-/* line 416, Resources/css/styles.scss */
+/* line 417, Resources/css/styles.scss */
 .tagIcon {
   padding-top: 0px;
   margin-bottom: 1px;
   margin-right: 3px;
 }
 
-/* line 421, Resources/css/styles.scss */
+/* line 422, Resources/css/styles.scss */
 a .tag:hover {
   color: var(--white) !important;
   background-color: #43484c !important;
 }
 
-/* line 425, Resources/css/styles.scss */
+/* line 426, Resources/css/styles.scss */
 .all-tags li {
   font-size: 1.4em;
   margin-right: 10px;
@@ -13453,98 +13453,115 @@ a .tag:hover {
 }
 
 /* MARK: - Fonts */
-/* line 431, Resources/css/styles.scss */
+/* line 432, Resources/css/styles.scss */
 .selectedSectionText {
   color: #333 !important;
 }
 
-/* line 434, Resources/css/styles.scss */
+/* line 435, Resources/css/styles.scss */
 .notSelectedSectionText {
   color: #d2d5d9 !important;
 }
 
 /* MARK: - SVG and Images */
-/* line 438, Resources/css/styles.scss */
+/* line 439, Resources/css/styles.scss */
 .svgIconInverted {
   fill: #6c757d !important;
   filter: opacity(50%);
 }
 
-/* line 442, Resources/css/styles.scss */
+/* line 443, Resources/css/styles.scss */
 .svgIconInverted:hover {
   fill: #333 !important;
   filter: opacity(100%);
 }
 
+/* line 448, Resources/css/styles.scss */
+article .youtube {
+  position: relative;
+  padding-top: 56.25%;
+  /* 16:9 aspect ratio */
+  margin-bottom: 25px;
+}
+
+/* line 455, Resources/css/styles.scss */
+article .youtube iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /* MARK: - Dark Theme Settings */
 @media (prefers-color-scheme: dark) {
-  /* line 448, Resources/css/styles.scss */
+  /* line 464, Resources/css/styles.scss */
   body, header {
     color: #aeb2b7;
     background-color: #222;
   }
-  /* line 452, Resources/css/styles.scss */
+  /* line 468, Resources/css/styles.scss */
   .postCardDescription {
     color: #aeb2b7eb;
   }
-  /* line 455, Resources/css/styles.scss */
+  /* line 471, Resources/css/styles.scss */
   .bg-dark, .bg-light, .auto-bg-color {
     background-color: #333 !important;
   }
-  /* line 458, Resources/css/styles.scss */
+  /* line 474, Resources/css/styles.scss */
   .border {
     border: none;
   }
-  /* line 461, Resources/css/styles.scss */
+  /* line 477, Resources/css/styles.scss */
   .bearlogsHeader, .border-bottom, .articleBordered {
     border-bottom: 1px solid #333 !important;
   }
-  /* line 464, Resources/css/styles.scss */
+  /* line 480, Resources/css/styles.scss */
   .postCardTitle, h1, h2, h3, h4, h5, h6 {
     color: #aeb2b7;
   }
-  /* line 467, Resources/css/styles.scss */
+  /* line 483, Resources/css/styles.scss */
   .postCardSectionTitle {
     color: #565a5f;
   }
-  /* line 470, Resources/css/styles.scss */
+  /* line 486, Resources/css/styles.scss */
   a:hover, .bearlogsFooterLink:hover, .selectedSectionText {
     color: #f8f9fa !important;
   }
-  /* line 473, Resources/css/styles.scss */
+  /* line 489, Resources/css/styles.scss */
   a.bearlogsHeaderTitle, .bearlogsPostTitle a {
     color: #ddd;
   }
-  /* line 476, Resources/css/styles.scss */
+  /* line 492, Resources/css/styles.scss */
   a.bearlogsHeaderTitle:hover {
     color: #fff;
   }
-  /* line 479, Resources/css/styles.scss */
+  /* line 495, Resources/css/styles.scss */
   .notSelectedSectionText {
     color: #45474d !important;
   }
-  /* line 482, Resources/css/styles.scss */
+  /* line 498, Resources/css/styles.scss */
   .bearlogsFooter {
     background-color: #222;
   }
-  /* line 485, Resources/css/styles.scss */
+  /* line 501, Resources/css/styles.scss */
   .bearlogsFooterRssIcon {
     filter: invert(0.34);
   }
-  /* line 488, Resources/css/styles.scss */
+  /* line 504, Resources/css/styles.scss */
   .bearlogsFooterRssLink:hover, .gs-spelling, .gs-result i {
     color: #6c757d !important;
   }
-  /* line 491, Resources/css/styles.scss */
+  /* line 507, Resources/css/styles.scss */
   .svgIconInverted {
     filter: opacity(50%);
   }
-  /* line 494, Resources/css/styles.scss */
+  /* line 510, Resources/css/styles.scss */
   .svgIconInverted:hover {
     fill: #ddd !important;
     filter: opacity(100%);
   }
-  /* line 498, Resources/css/styles.scss */
+  /* line 514, Resources/css/styles.scss */
   .logoForFeaturedPosts, .dialogEmojiLeft, .logoOnPageDescriptionBlock, .dialogEmoji {
     filter: opacity(85%);
   }
