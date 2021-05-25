@@ -13525,43 +13525,47 @@ article .youtube iframe {
     color: #565a5f;
   }
   /* line 486, Resources/css/styles.scss */
+  article a {
+    color: #689dd5 !important;
+  }
+  /* line 489, Resources/css/styles.scss */
   a:hover, .bearlogsFooterLink:hover, .selectedSectionText {
     color: #f8f9fa !important;
   }
-  /* line 489, Resources/css/styles.scss */
+  /* line 492, Resources/css/styles.scss */
   a.bearlogsHeaderTitle, .bearlogsPostTitle a {
     color: #ddd;
   }
-  /* line 492, Resources/css/styles.scss */
+  /* line 495, Resources/css/styles.scss */
   a.bearlogsHeaderTitle:hover {
     color: #fff;
   }
-  /* line 495, Resources/css/styles.scss */
+  /* line 498, Resources/css/styles.scss */
   .notSelectedSectionText {
     color: #45474d !important;
   }
-  /* line 498, Resources/css/styles.scss */
+  /* line 501, Resources/css/styles.scss */
   .bearlogsFooter {
     background-color: #222;
   }
-  /* line 501, Resources/css/styles.scss */
+  /* line 504, Resources/css/styles.scss */
   .bearlogsFooterRssIcon {
     filter: invert(0.34);
   }
-  /* line 504, Resources/css/styles.scss */
+  /* line 507, Resources/css/styles.scss */
   .bearlogsFooterRssLink:hover, .gs-spelling, .gs-result i {
     color: #6c757d !important;
   }
-  /* line 507, Resources/css/styles.scss */
+  /* line 510, Resources/css/styles.scss */
   .svgIconInverted {
     filter: opacity(50%);
   }
-  /* line 510, Resources/css/styles.scss */
+  /* line 513, Resources/css/styles.scss */
   .svgIconInverted:hover {
     fill: #ddd !important;
     filter: opacity(100%);
   }
-  /* line 514, Resources/css/styles.scss */
+  /* line 517, Resources/css/styles.scss */
   .logoForFeaturedPosts, .dialogEmojiLeft, .logoOnPageDescriptionBlock, .dialogEmoji {
     filter: opacity(85%);
   }
