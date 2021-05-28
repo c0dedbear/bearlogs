@@ -2730,10 +2730,10 @@ pre code {
 }
 
 /* line 2110, Resources/css/bootstrap.css */
-input.form-control[type="date"],
-input.form-control[type="time"],
-input.form-control[type="datetime-local"],
-input.form-control[type="month"] {
+input[type="date"].form-control,
+input[type="time"].form-control,
+input[type="datetime-local"].form-control,
+input[type="month"].form-control {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -3301,7 +3301,7 @@ fieldset:disabled a.btn {
 }
 
 /* line 2603, Resources/css/bootstrap.css */
-.btn-primary:not(:disabled):not(.disabled):active, .btn-primary.active:not(:disabled):not(.disabled),
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
   color: #fff;
   background-color: #0062cc;
@@ -3309,7 +3309,7 @@ fieldset:disabled a.btn {
 }
 
 /* line 2610, Resources/css/bootstrap.css */
-.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary.active:not(:disabled):not(.disabled):focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
 }
@@ -3344,7 +3344,7 @@ fieldset:disabled a.btn {
 }
 
 /* line 2640, Resources/css/bootstrap.css */
-.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary.active:not(:disabled):not(.disabled),
+.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active,
 .show > .btn-secondary.dropdown-toggle {
   color: #fff;
   background-color: #545b62;
@@ -3352,7 +3352,7 @@ fieldset:disabled a.btn {
 }
 
 /* line 2647, Resources/css/bootstrap.css */
-.btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary.active:not(:disabled):not(.disabled):focus,
+.btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-secondary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
 }
@@ -3387,7 +3387,7 @@ fieldset:disabled a.btn {
 }
 
 /* line 2677, Resources/css/bootstrap.css */
-.btn-success:not(:disabled):not(.disabled):active, .btn-success.active:not(:disabled):not(.disabled),
+.btn-success:not(:disabled):not(.disabled):active, .btn-success:not(:disabled):not(.disabled).active,
 .show > .btn-success.dropdown-toggle {
   color: #fff;
   background-color: #1e7e34;
@@ -3395,7 +3395,7 @@ fieldset:disabled a.btn {
 }
 
 /* line 2684, Resources/css/bootstrap.css */
-.btn-success:not(:disabled):not(.disabled):active:focus, .btn-success.active:not(:disabled):not(.disabled):focus,
+.btn-success:not(:disabled):not(.disabled):active:focus, .btn-success:not(:disabled):not(.disabled).active:focus,
 .show > .btn-success.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5);
 }
@@ -3430,7 +3430,7 @@ fieldset:disabled a.btn {
 }
 
 /* line 2714, Resources/css/bootstrap.css */
-.btn-info:not(:disabled):not(.disabled):active, .btn-info.active:not(:disabled):not(.disabled),
+.btn-info:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active,
 .show > .btn-info.dropdown-toggle {
   color: #fff;
   background-color: #117a8b;
@@ -3438,7 +3438,7 @@ fieldset:disabled a.btn {
 }
 
 /* line 2721, Resources/css/bootstrap.css */
-.btn-info:not(:disabled):not(.disabled):active:focus, .btn-info.active:not(:disabled):not(.disabled):focus,
+.btn-info:not(:disabled):not(.disabled):active:focus, .btn-info:not(:disabled):not(.disabled).active:focus,
 .show > .btn-info.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(58, 176, 195, 0.5);
 }
@@ -3473,7 +3473,7 @@ fieldset:disabled a.btn {
 }
 
 /* line 2751, Resources/css/bootstrap.css */
-.btn-warning:not(:disabled):not(.disabled):active, .btn-warning.active:not(:disabled):not(.disabled),
+.btn-warning:not(:disabled):not(.disabled):active, .btn-warning:not(:disabled):not(.disabled).active,
 .show > .btn-warning.dropdown-toggle {
   color: #212529;
   background-color: #d39e00;
@@ -3481,7 +3481,7 @@ fieldset:disabled a.btn {
 }
 
 /* line 2758, Resources/css/bootstrap.css */
-.btn-warning:not(:disabled):not(.disabled):active:focus, .btn-warning.active:not(:disabled):not(.disabled):focus,
+.btn-warning:not(:disabled):not(.disabled):active:focus, .btn-warning:not(:disabled):not(.disabled).active:focus,
 .show > .btn-warning.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(222, 170, 12, 0.5);
 }
@@ -3516,7 +3516,7 @@ fieldset:disabled a.btn {
 }
 
 /* line 2788, Resources/css/bootstrap.css */
-.btn-danger:not(:disabled):not(.disabled):active, .btn-danger.active:not(:disabled):not(.disabled),
+.btn-danger:not(:disabled):not(.disabled):active, .btn-danger:not(:disabled):not(.disabled).active,
 .show > .btn-danger.dropdown-toggle {
   color: #fff;
   background-color: #bd2130;
@@ -3524,7 +3524,7 @@ fieldset:disabled a.btn {
 }
 
 /* line 2795, Resources/css/bootstrap.css */
-.btn-danger:not(:disabled):not(.disabled):active:focus, .btn-danger.active:not(:disabled):not(.disabled):focus,
+.btn-danger:not(:disabled):not(.disabled):active:focus, .btn-danger:not(:disabled):not(.disabled).active:focus,
 .show > .btn-danger.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, 0.5);
 }
@@ -3559,7 +3559,7 @@ fieldset:disabled a.btn {
 }
 
 /* line 2825, Resources/css/bootstrap.css */
-.btn-light:not(:disabled):not(.disabled):active, .btn-light.active:not(:disabled):not(.disabled),
+.btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active,
 .show > .btn-light.dropdown-toggle {
   color: #212529;
   background-color: #dae0e5;
@@ -3567,7 +3567,7 @@ fieldset:disabled a.btn {
 }
 
 /* line 2832, Resources/css/bootstrap.css */
-.btn-light:not(:disabled):not(.disabled):active:focus, .btn-light.active:not(:disabled):not(.disabled):focus,
+.btn-light:not(:disabled):not(.disabled):active:focus, .btn-light:not(:disabled):not(.disabled).active:focus,
 .show > .btn-light.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
 }
@@ -3602,7 +3602,7 @@ fieldset:disabled a.btn {
 }
 
 /* line 2862, Resources/css/bootstrap.css */
-.btn-dark:not(:disabled):not(.disabled):active, .btn-dark.active:not(:disabled):not(.disabled),
+.btn-dark:not(:disabled):not(.disabled):active, .btn-dark:not(:disabled):not(.disabled).active,
 .show > .btn-dark.dropdown-toggle {
   color: #fff;
   background-color: #1d2124;
@@ -3610,7 +3610,7 @@ fieldset:disabled a.btn {
 }
 
 /* line 2869, Resources/css/bootstrap.css */
-.btn-dark:not(:disabled):not(.disabled):active:focus, .btn-dark.active:not(:disabled):not(.disabled):focus,
+.btn-dark:not(:disabled):not(.disabled):active:focus, .btn-dark:not(:disabled):not(.disabled).active:focus,
 .show > .btn-dark.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5);
 }
@@ -3640,7 +3640,7 @@ fieldset:disabled a.btn {
 }
 
 /* line 2894, Resources/css/bootstrap.css */
-.btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary.active:not(:disabled):not(.disabled),
+.btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
 .show > .btn-outline-primary.dropdown-toggle {
   color: #fff;
   background-color: #007bff;
@@ -3648,7 +3648,7 @@ fieldset:disabled a.btn {
 }
 
 /* line 2901, Resources/css/bootstrap.css */
-.btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary.active:not(:disabled):not(.disabled):focus,
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
 }
@@ -3678,7 +3678,7 @@ fieldset:disabled a.btn {
 }
 
 /* line 2926, Resources/css/bootstrap.css */
-.btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary.active:not(:disabled):not(.disabled),
+.btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary:not(:disabled):not(.disabled).active,
 .show > .btn-outline-secondary.dropdown-toggle {
   color: #fff;
   background-color: #6c757d;
@@ -3686,7 +3686,7 @@ fieldset:disabled a.btn {
 }
 
 /* line 2933, Resources/css/bootstrap.css */
-.btn-outline-secondary:not(:disabled):not(.disabled):active:focus, .btn-outline-secondary.active:not(:disabled):not(.disabled):focus,
+.btn-outline-secondary:not(:disabled):not(.disabled):active:focus, .btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-secondary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
 }
@@ -3716,7 +3716,7 @@ fieldset:disabled a.btn {
 }
 
 /* line 2958, Resources/css/bootstrap.css */
-.btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success.active:not(:disabled):not(.disabled),
+.btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success:not(:disabled):not(.disabled).active,
 .show > .btn-outline-success.dropdown-toggle {
   color: #fff;
   background-color: #28a745;
@@ -3724,7 +3724,7 @@ fieldset:disabled a.btn {
 }
 
 /* line 2965, Resources/css/bootstrap.css */
-.btn-outline-success:not(:disabled):not(.disabled):active:focus, .btn-outline-success.active:not(:disabled):not(.disabled):focus,
+.btn-outline-success:not(:disabled):not(.disabled):active:focus, .btn-outline-success:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-success.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
 }
@@ -3754,7 +3754,7 @@ fieldset:disabled a.btn {
 }
 
 /* line 2990, Resources/css/bootstrap.css */
-.btn-outline-info:not(:disabled):not(.disabled):active, .btn-outline-info.active:not(:disabled):not(.disabled),
+.btn-outline-info:not(:disabled):not(.disabled):active, .btn-outline-info:not(:disabled):not(.disabled).active,
 .show > .btn-outline-info.dropdown-toggle {
   color: #fff;
   background-color: #17a2b8;
@@ -3762,7 +3762,7 @@ fieldset:disabled a.btn {
 }
 
 /* line 2997, Resources/css/bootstrap.css */
-.btn-outline-info:not(:disabled):not(.disabled):active:focus, .btn-outline-info.active:not(:disabled):not(.disabled):focus,
+.btn-outline-info:not(:disabled):not(.disabled):active:focus, .btn-outline-info:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-info.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
 }
@@ -3792,7 +3792,7 @@ fieldset:disabled a.btn {
 }
 
 /* line 3022, Resources/css/bootstrap.css */
-.btn-outline-warning:not(:disabled):not(.disabled):active, .btn-outline-warning.active:not(:disabled):not(.disabled),
+.btn-outline-warning:not(:disabled):not(.disabled):active, .btn-outline-warning:not(:disabled):not(.disabled).active,
 .show > .btn-outline-warning.dropdown-toggle {
   color: #212529;
   background-color: #ffc107;
@@ -3800,7 +3800,7 @@ fieldset:disabled a.btn {
 }
 
 /* line 3029, Resources/css/bootstrap.css */
-.btn-outline-warning:not(:disabled):not(.disabled):active:focus, .btn-outline-warning.active:not(:disabled):not(.disabled):focus,
+.btn-outline-warning:not(:disabled):not(.disabled):active:focus, .btn-outline-warning:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-warning.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
 }
@@ -3830,7 +3830,7 @@ fieldset:disabled a.btn {
 }
 
 /* line 3054, Resources/css/bootstrap.css */
-.btn-outline-danger:not(:disabled):not(.disabled):active, .btn-outline-danger.active:not(:disabled):not(.disabled),
+.btn-outline-danger:not(:disabled):not(.disabled):active, .btn-outline-danger:not(:disabled):not(.disabled).active,
 .show > .btn-outline-danger.dropdown-toggle {
   color: #fff;
   background-color: #dc3545;
@@ -3838,7 +3838,7 @@ fieldset:disabled a.btn {
 }
 
 /* line 3061, Resources/css/bootstrap.css */
-.btn-outline-danger:not(:disabled):not(.disabled):active:focus, .btn-outline-danger.active:not(:disabled):not(.disabled):focus,
+.btn-outline-danger:not(:disabled):not(.disabled):active:focus, .btn-outline-danger:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-danger.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
 }
@@ -3868,7 +3868,7 @@ fieldset:disabled a.btn {
 }
 
 /* line 3086, Resources/css/bootstrap.css */
-.btn-outline-light:not(:disabled):not(.disabled):active, .btn-outline-light.active:not(:disabled):not(.disabled),
+.btn-outline-light:not(:disabled):not(.disabled):active, .btn-outline-light:not(:disabled):not(.disabled).active,
 .show > .btn-outline-light.dropdown-toggle {
   color: #212529;
   background-color: #f8f9fa;
@@ -3876,7 +3876,7 @@ fieldset:disabled a.btn {
 }
 
 /* line 3093, Resources/css/bootstrap.css */
-.btn-outline-light:not(:disabled):not(.disabled):active:focus, .btn-outline-light.active:not(:disabled):not(.disabled):focus,
+.btn-outline-light:not(:disabled):not(.disabled):active:focus, .btn-outline-light:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-light.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
 }
@@ -3906,7 +3906,7 @@ fieldset:disabled a.btn {
 }
 
 /* line 3118, Resources/css/bootstrap.css */
-.btn-outline-dark:not(:disabled):not(.disabled):active, .btn-outline-dark.active:not(:disabled):not(.disabled),
+.btn-outline-dark:not(:disabled):not(.disabled):active, .btn-outline-dark:not(:disabled):not(.disabled).active,
 .show > .btn-outline-dark.dropdown-toggle {
   color: #fff;
   background-color: #343a40;
@@ -3914,7 +3914,7 @@ fieldset:disabled a.btn {
 }
 
 /* line 3125, Resources/css/bootstrap.css */
-.btn-outline-dark:not(:disabled):not(.disabled):active:focus, .btn-outline-dark.active:not(:disabled):not(.disabled):focus,
+.btn-outline-dark:not(:disabled):not(.disabled):active:focus, .btn-outline-dark:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-dark.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
 }
@@ -3971,9 +3971,9 @@ fieldset:disabled a.btn {
 }
 
 /* line 3173, Resources/css/bootstrap.css */
-input.btn-block[type="submit"],
-input.btn-block[type="reset"],
-input.btn-block[type="button"] {
+input[type="submit"].btn-block,
+input[type="reset"].btn-block,
+input[type="button"].btn-block {
   width: 100%;
 }
 
