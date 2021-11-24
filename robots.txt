@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: /search
-Disallow: /drafts/
-Sitemap: https://bearlogs.ru/sitemap.xml
