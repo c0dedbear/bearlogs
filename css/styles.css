@@ -1,0 +1,520 @@
+/* MARK: - Imports */
+@import "tags.css";
+@import "search.css";
+@import "bootstrap.css";
+@import "timeline-screenplays.css";
+@import "animations.css";
+@import "swift-syntax-highlight.css";
+@import "dev-projects.css";
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:700,900");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+/* MARK: - Custom and overrided bootstrap classes */
+html {
+	scroll-behavior: smooth;
+}
+body, header {
+	color: #525b65;
+}
+.postCard, .featuredPostCardTitle, .featuredPostCardDescription {
+	font-family: Roboto;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: -apple-system, Roboto, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+}
+a, a:hover {
+	text-decoration: none;
+}
+a:hover {
+	color: #333 !important;
+}
+article {
+	margin: 0 0 20px;
+}
+li {
+	margin: 0 0 0.4em;
+}
+blockquote.quote {
+    position: relative;
+    text-align: center;
+    padding: 1rem 1.2rem;
+    margin: 1rem auto 2rem;
+}
+blockquote.quote {
+    background:
+    linear-gradient(to right, #039be5 4px, transparent 4px) 0 100%,
+    linear-gradient(to left, #039be5 4px, transparent 4px) 100% 0,
+    linear-gradient(to bottom, #039be5 4px, transparent 4px) 100% 0,
+    linear-gradient(to top, #039be5 4px, transparent 4px) 0 100%;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+blockquote.quote:before,
+blockquote.quote:after {
+    font-family: FontAwesome;
+    position: absolute;
+    color: #039be5;
+    font-size: 34px;
+}
+blockquote.quote:before{
+    content: "\f10d";
+    top: -12px;
+    margin-right: -20px;
+    right: 100%;
+}
+blockquote.quote:after{
+    content: "\f10e";
+    margin-left: -20px;
+    left: 100%;
+    top: auto;
+    bottom: -20px;
+}
+.jumbotron a {
+	color: var(--secondary);
+}
+.jumbotron a:hover {
+	color: var(--light);
+}
+.articleBordered {
+	border-bottom: 1px solid #eaeff1;
+}
+.bg-dark {
+	background-color: #343a40;
+}
+.display-4 {
+	font-size: 2.5rem;
+}
+.width75OnLarge {
+	width: auto !important
+}
+.opacity80 {
+	filter: opacity(80%);
+}
+.logoOnPageDescriptionBlock {
+	float: right;
+	width: auto;
+	height: 60px;
+	padding-top: 12px;
+	filter: opacity(90%);
+}
+.logoOnNotFoundSearchPage {
+	width: 60px;
+	height: 60px;
+	padding-top: 12px;
+	filter: opacity(90%);
+}
+.dialogEmojiNotFound {
+	display: block;
+	padding-left: 0.2em;
+	font-size: 2rem !important;
+	filter: opacity(95%);
+}
+.dialogEmoji {
+	display: block;
+	float: right;
+	padding-left: 0.2em;
+	font-size: 2rem !important;
+	filter: opacity(95%);
+}
+.logoForFeaturedPosts {
+	float: left;
+	width: auto;
+	height: 60px;
+	padding-top: 12px;
+	filter: opacity(90%);
+}
+.dialogEmojiLeft {
+	display: block;
+	float: left;
+	padding-left: 0.2em;
+	padding-right: 0.5em;
+	font-size: 2rem !important;
+	filter: opacity(95%);
+}
+.textOnPageDescriptionBlock {
+	font-size: 0.75rem !important;
+	font-family: 'Press Start 2P', cursive !important;
+	filter: opacity(80%);
+
+}
+/* MARK: - Screen Sizes Settings */
+@media (min-width: 768px) {
+	.h-md-250 { height: 250px; }
+	.display-4 { font-size: 3rem; }
+	.postsFeed {
+		padding: 40px 0 5vw;
+		border-top-left-radius: 3px;
+		border-top-right-radius: 3px;
+	}
+
+	.width75OnLarge {
+		width: 75% !important
+	}
+}
+
+@media (max-width: 575.98px)  {
+	.featuredPostCardImage {
+		max-width: 100px;
+	}
+}
+
+@media (max-width:  991.98px) {
+	.bearlogsFooterBackToTopButton {
+		display: block;
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+	.bearlogsFooter div.col-12:first-child {
+		margin-bottom: 1em !important;
+	}
+	.footerSections {
+		margin-left: 1em !important;
+	}
+	.logoOnPageDescriptionBlock {
+		height: 30px;
+		padding-top: 6px;
+	}
+	.textOnPageDescriptionBlock {
+		font-size: 0.8rem !important;
+	}
+	.dialogEmoji {
+		font-size: 1rem !important;
+	}
+	.featuredPostCardDescription {
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+	}
+	.featuredPostCardTitle {
+		white-space: normal; /* Текст переносится */
+		overflow: hidden; /* Обрезаем всё за пределами блока */
+		text-overflow: ellipsis; /* Добавляем многоточие */
+	}
+	.width75OnLarge {
+		width: 100% !important
+	}
+	.featuredPostCardImage {
+		max-width: 100px;
+	}
+}
+/* MARK: - Blog Header */
+.bearlogsHeader {
+	line-height: 1;
+	border-bottom: 1px solid #e5e5e5;
+}
+.bearlogsHeaderTitle {
+	font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+	font-size: 2.25rem;
+	color: #343a40;
+}
+.bearlogsHeaderTitle:hover {
+	text-decoration: none;
+	color: #6c757d;
+}
+/* MARK: - Nav Scroller */
+.navScroller {
+	position: relative;
+	z-index: 2;
+	height: 2.75rem;
+	overflow-y: hidden;
+}
+.navScroller .nav {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	padding-bottom: 1rem;
+	margin-top: -1px;
+	overflow-x: auto;
+	text-align: center;
+	white-space: nowrap;
+	-webkit-overflow-scrolling: touch;
+}
+.navScroller .nav-link {
+	padding-top: .75rem;
+	padding-bottom: .75rem;
+	font-size: 1rem;
+}
+
+/* MARK: - Blog posts */
+.posts {
+	overflow-x: hidden;
+}
+.postsFeed {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -20px;
+	padding: 0 0 0;
+}
+.postCard {
+	flex: 1 1 301px;
+	flex-direction: column;
+	overflow: hidden;
+	padding: 0 20px 0px;
+	min-height: 220px;
+	background-size: cover;
+	position: relative;
+	display: flex;
+}
+.postCardTitle {
+	color: #525b65;
+	margin: 0 0 .4em;
+	line-height: 1.15em;
+	font-family: Roboto;
+}
+.postCardImage {
+	height: 200px;
+	width: 100%;
+	background: var(--lightgrey) no-repeat 50%;
+	object-fit: cover;
+	margin-bottom: 0.5em;
+}
+.postCardHeader {
+	margin-top: 0;
+	margin: 15px 0 0;
+}
+.postCardContentLink {
+	position: relative;
+	display: block;
+}
+.postCardMeta {
+	display: flex;
+	align-items: flex-start;
+	padding: 0;
+}
+.postCardBylineContent {
+	flex: 1 1 50%;
+	display: flex;
+	flex-direction: column;
+	margin: 2px 0 0 6px;
+	color: #73828a;
+	font-size: .9rem;
+	line-height: 1.4em;
+	font-weight: 400;
+	letter-spacing: .2px;
+}
+.postCardBylineContent a {
+	color: #434952;
+	font-weight: 600;
+}
+.postCardSectionTitle {
+	color: #97a0a9;
+	font-size: .8rem;
+	font-weight: 400;
+	letter-spacing: .2px;
+	text-transform: uppercase;
+	margin-bottom: -0.8em;
+}
+.postCardDescription {
+	color: #6e6e6e;
+}
+.postCardBylineContent span {
+	margin: 0;
+}
+.postCardBylineContentDate {
+	font-size: .8rem;
+	display: inline-block;
+	margin: 0 4px;
+	opacity: .63;
+}
+.featuredPostCardImage {
+	width: 200px;
+	height: 100%;
+	background: var(--lightgrey) no-repeat 50%;
+	object-fit: cover;
+	filter: grayscale(50%);
+}
+.featuredPostCardDescription {
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+.featuredPostCardTitle {
+	font-size: 1.4rem;
+	white-space: nowrap; /* Текст переносится */
+	overflow: hidden; /* Обрезаем всё за пределами блока */
+	text-overflow: ellipsis; /* Добавляем многоточие */
+}
+
+
+/* MARK: - Blog Footer */
+.bearlogsFooter {
+	padding-top: 0.1rem;
+}
+.footerSectionTitle {
+	font-weight: 200;
+}
+.footerSections {
+	margin-left: 6em;
+	margin-right: auto;
+}
+.bearlogsFooter div.col-12:first-child {
+	text-align: center;
+}
+.bearlogsFooterLink {
+	filter: opacity(80%);
+	color: #6c757d !important;
+	font-family: serif;
+	font-size: 0.8em;
+	font-weight: 200;
+}
+.linkDisabled {
+	filter: opacity(50%);
+}
+.bearlogsFooterLink:hover {
+	text-decoration: none;
+	color: #343a40 !important;
+}
+.bearlogsFooterImg {
+	height: 20px;
+	margin-bottom: .25em;
+	margin-right: .5em;
+}
+.bearlogsFooterRssLink:hover {
+	color: #6c757d !important;
+}
+.bearlogsFooterRssIcon {
+	filter: opacity(30%);
+	margin-bottom: 0.2em;
+	margin-right: 0.25em;
+}
+.bearlogsFooterBackToTopButton {
+	display: block;
+	margin-left:auto;
+	margin-right:0;
+}
+.bearlogsFooterSectionTitle {
+	color: #fff !important;
+}
+abbr[title] {
+  text-decoration: none !important;
+  -webkit-text-decoration: none !important;
+  text-decoration: none !important;
+  cursor: help;
+  border-bottom: none !important;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+}
+/* MARK: - Tags */
+.tagList {}
+.tag {
+	display: inline-block;
+	padding: 4px 6px;
+	border-radius: 8px;
+	margin-right: 5px !important;
+	font-size: 0.75em;
+	color: var(--white) !important;
+	font-weight: 400 !important;
+	border: none !important;
+}
+.tag a {
+	text-decoration: none;
+}
+.tagIcon {
+	padding-top: 0px;
+	margin-bottom: 1px;
+	margin-right: 3px;
+}
+a .tag:hover {
+	color: var(--white) !important;
+	background-color: #43484c !important;
+}
+.all-tags li {
+	font-size: 1.4em;
+	margin-right: 10px;
+	padding: 6px 10px;
+}
+/* MARK: - Fonts */
+.selectedSectionText {
+	color: #333 !important;
+}
+.notSelectedSectionText {
+	color: #d2d5d9 !important;
+}
+/* MARK: - SVG and Images */
+.svgIconInverted {
+	fill: #6c757d !important;
+	filter: opacity(50%);
+}
+.svgIconInverted:hover {
+	fill: #333 !important;
+	filter: opacity(100%);
+}
+
+article .youtube {
+    position: relative;
+    padding-top: 56.25%;
+    /* 16:9 aspect ratio */
+    margin-bottom: 25px;
+}
+
+article .youtube iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* MARK: - Dark Theme Settings */
+@media (prefers-color-scheme: dark) {
+	body, header {
+		color: #aeb2b7;
+		background-color: #222;
+	}
+	.postCardDescription {
+		color: #aeb2b7eb;
+	}
+	.bg-dark, .bg-light, .auto-bg-color {
+		background-color: #333 !important;
+	}
+	.border {
+		border: none;
+	}
+	.bearlogsHeader, .border-bottom, .articleBordered {
+		border-bottom: 1px solid #333 !important;
+	}
+	.postCardTitle, h1, h2, h3, h4, h5, h6 {
+		color: #aeb2b7;
+	}
+	.postCardSectionTitle {
+		color: #565a5f;
+	}
+	article a {
+		color: #689dd5 !important;
+	}
+	a:hover, .bearlogsFooterLink:hover, .selectedSectionText {
+		color: #f8f9fa !important;
+	}
+	a.bearlogsHeaderTitle, .bearlogsPostTitle a {
+		color: #ddd;
+	}
+	a.bearlogsHeaderTitle:hover {
+		color: #fff;
+	}
+	.notSelectedSectionText {
+		color: #45474d !important;
+	}
+	.bearlogsFooter {
+		background-color: #222;
+	}
+	.bearlogsFooterRssIcon {
+		filter: invert(0.34);
+	}
+	.bearlogsFooterRssLink:hover, .gs-spelling, .gs-result i {
+		color: #6c757d !important;
+	}
+	.svgIconInverted {
+		filter: opacity(50%);
+	}
+	.svgIconInverted:hover {
+		fill: #ddd !important;
+		filter: opacity(100%);
+	}
+	.logoForFeaturedPosts, .dialogEmojiLeft, .logoOnPageDescriptionBlock, .dialogEmoji {
+		filter: opacity(85%);
+	}
+}
